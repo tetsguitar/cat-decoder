@@ -246,6 +246,11 @@ body {
         font-size: 16px;
     }
 
+    .botoes {
+        align-items: center;
+
+    }
+
    
     .criptografar, .descriptografar, .botao-copiar {
         width: 100%;
