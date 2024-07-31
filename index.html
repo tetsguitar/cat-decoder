@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p class="logo">CAT</p>
+    </header>
+    <main class="container">
+
+        <div class="input-section">
+            <textarea id= "input-texto" class="texto-esquerda" placeholder="Digite seu texto aqui"></textarea>
+            <p class="letras-pequenas">Somente letras minúsculas e sem acento.</p>
+            <div class="botoes">
+                <button class="criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+
+        </div>
+        <div class="output-section">
+            <div class="copiar-texto">
+                <textarea id="output-texto" class="texto-direita" readonly></textarea>
+                <button class="botao-copiar" id="botao-copiar" onclick="copiartexto()">Copiar</button>
+        </div>
+            <div class="box-output" id="box-output">
+                <img class="gato" src="./assets/gato_novo2_semfundo.png" alt="Imagem gato">
+                <p class="campo-resultado">Nenhuma mensagem encontrada</p>
+                <p class="campo-resultado2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>      
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
